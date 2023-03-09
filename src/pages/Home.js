@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="main">
       <div className="header">
-    <h1>Available books</h1>
+    <a href="/home">Available books</a>
     </div>
 <div className="data-component">
       <DataComponent />

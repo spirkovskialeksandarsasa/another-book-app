@@ -7,3 +7,9 @@
 input{
     margin-right:7.5px;
 }
+.back-link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
