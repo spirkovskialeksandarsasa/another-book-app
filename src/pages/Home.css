@@ -1,5 +1,5 @@
 .main{
-    position: absolute;
+   /* position: absolute; */
     width: 100%;
     background-color: rgb(95, 115, 126);
     min-height: 900px;
@@ -8,6 +8,5 @@
     position: absolute;
     height: 100%;
     overflow: hidden;
-    background-color: rgb(95, 115, 126);
     padding:0;
 }

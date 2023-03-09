@@ -2,19 +2,20 @@ import React , {useState} from "react";
 import data from '../listofbooks.json';
 import './DataComponent.css';
 import '../App.css';
-import Search from './Search'
+import Search from './Search';
+import { Grid } from '@mui/material';
 
 function DataComponent(){
     const Book = ({ author, title, genre }) => (
-        <div className="books">
-          <div className="book-props">
+        <Grid container sx={{ m: 3 }} xs={12} sm={6} md={4} lg={3} xl={3} className="books">
+          <Grid item className="book-props">
             <div className="title"><h2>{title}</h2></div>
             <div className="description">
             <p className="author">Written by <strong>{author}</strong></p>
             </div>
             <p className="genre">{genre}</p>
-            </div>
-          </div>
+            </Grid>
+          </Grid>
       );
       const [query,setQuery] = useState('');
       const sortedData = [...data].sort((a, b) => a.author.localeCompare(b.author));
