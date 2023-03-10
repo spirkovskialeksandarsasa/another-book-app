@@ -71,3 +71,22 @@ height:60px;
     margin-right:40px !important; 
     }
   }
+  @media screen and (max-width: 3840px) and (min-width: 1921px) {
+    .books{
+        margin-left:100px !important; 
+    margin-right:40px !important; 
+    }
+  }
+  @media screen and (max-width: 420px) and (min-width: 361px) {
+    .books{
+        margin-left:50px !important; 
+    margin-right:40px !important; 
+    }
+  }
+  @media screen and (max-width: 650px) and (min-width: 421px) {
+    .books{
+        margin-left:85px !important; 
+    margin-right:40px !important; 
+    }
+  }
+
