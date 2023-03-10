@@ -1,8 +1,8 @@
-.main{
+.home{
     position: absolute;
     width: 100%;
     background-color: rgb(95, 115, 126);
-    min-height: 900px;
+    min-height: 1000px;
 }
 .dataComponent{
     position: absolute;

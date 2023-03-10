@@ -4,8 +4,8 @@ import './Home.css';
 
 function Home() {
   return (
-    <div className="main">
-      <div className="header">
+    <div className="home">
+      <div className="home__header">
     <a href="/home">Available books</a>
     </div>
 <div className="data-component">

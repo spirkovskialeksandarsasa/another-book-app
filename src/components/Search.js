@@ -16,13 +16,13 @@ function Search({ onSearch }) {
 
     return (
         <>
-        <div className='search'>
-            <input type="search" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
-            <button onClick={handleSearch}>Search</button>
-        </div>
-        <div className="back-link">
-        {searchClicked && <strong><p>Search result for {query}</p></strong>}
-        </div>
+            <div className="search">
+                <input className="search__input" type="search" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
+                <button className="search__button" onClick={handleSearch}>Search</button>
+            </div>
+            <div className="result">
+                {searchClicked && query !== "" && <p className="result__text">Search result for <strong>{query}</strong></p>}
+            </div>
         </>
     );
 }

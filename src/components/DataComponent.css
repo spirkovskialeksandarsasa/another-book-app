@@ -1,8 +1,4 @@
 
-
-.default-image{
-    width: 15%;
-}
 a{
     justify-content: center;
     align-items: center;
@@ -22,8 +18,8 @@ h2{
 }
 .books{
     overflow: hidden;
-    margin-left:50px;
-    margin-right:20px;
+    margin-left:20px; /* 50 */
+    margin-right:10px; /* 20 */
     margin-bottom:50px;
     border: 1px solid curved rgb(21, 20, 20);
     border-radius:5px;
@@ -42,16 +38,36 @@ p{
         display: flex;
         flex-wrap: wrap; 
 }
-.title{
+.books__title{
 position: sticky;
 text-align: center;
 width: 300px;
 height:60px;
 }
-.description{
+.books__description{
     display:flex;
     text-align: right;
 }
-.genre{
+.books__genre{
     text-transform:uppercase;
 }
+.error{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.error__message{
+    font-weight: bold;
+}
+@media screen and (max-width: 1920px) and (min-width: 900px) {
+    .books{
+        margin-left:50px !important; 
+    margin-right:20px !important; 
+    }
+  }
+  @media screen and (max-width: 3840px) and (min-width: 1921px) {
+    .books{
+        margin-left:100px !important; 
+    margin-right:40px !important; 
+    }
+  }
